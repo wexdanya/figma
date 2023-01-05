@@ -1,13 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Figma</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/header.css" />
+    <link rel="stylesheet" href="./assets/styles/countries-section.css" />
+    <link rel="stylesheet" href="./assets/styles/study-info.css" />
+    <link rel="stylesheet" href="./assets/styles/price-block.css" />
+    <link rel="stylesheet" href="./assets/styles/howitworks.css" />
+    <link rel="stylesheet" href="./assets/styles/certificate-section.css" />
+    <link rel="stylesheet" href="./assets/styles/footer.css" />
+    <title>STUDY.UA.</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><a href="/" class="logo-link"></a></div>
+      <div class="wraper">
+        <div class="header-wraper">
+          <div class="header__text-wraper">
+            <h1 class="header-title">
+              Шукаєте подарунок дитині до новорічних свят?
+            </h1>
+            <p class="header-subtitle">
+              Подаруйте сертифікат на літню подорож за кордон!<br />
+              Лос-Анджелес, Нью-Йорк, Торонто або Канкун.. У нас
+              <span class="bold">
+                понад 100 ідей для незабутнього подарунка!
+              </span>
+            </p>
+          </div>
+          <button class="header-button"><a href="#certificate">Подарувати</a> </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="countries-section">
+        <picture class="countries-bg">
+          <img src="./assets/images/countries-bg.svg" alt="" />
+        </picture>
+        <h2 class="countries-section__title">
+          Враження — найкращий подарунок!
+        </h2>
+        <picture>
+          <img
+            class="countries-section__giftimg"
+            src="./assets/images/gift1.svg"
+            alt="gift"
+          />
+        </picture>
+        <p class="countries-section__subtitle">
+          Тільки уявіть — ваша дитина знаходить під ялинкою яскравий бокс,
+          відкриває в очікуванні дива, та знаходить там подорож, що
+          запам'ятається на все життя. Вам потрібно тільки обрати напрямок
+          поїздки.
+        </p>
+        <section class="country-section">
+          <h3 class="country-section__country-title">Велика Британія</h3>
+          <picture class="country-section__country-img">
+            <img src="./assets/images/england.svg" alt="" />
+          </picture>
+          <div class="country-section__cityes">
+            <a href="" class="city__link">Лондон</a>
+            <a href="" class="city__link">Оксфорд</a>
+            <a href="" class="city__link">Кембридж</a>
+            <a href="" class="city__link">Віндзор</a>
+            <a href="" class="city__link">Бат</a>
+            <a href="" class="city__link">Дувр</a>
+            <a href="" class="city__link">Манчестер</a>
+            <a href="" class="city__link">Йорк</a>
+            <a href="" class="city__link">Стірлінг</a>
+            <a href="" class="city__link">Уормінстер</a>
+          </div>
+        </section>
+        <section class="country-section">
+          <h3 class="country-section__country-title">Ірландія</h3>
+          <picture class="country-section__country-img">
+            <img src="./assets/images/irland.svg" alt="" />
+          </picture>
+          <div class="country-section__cityes">
+            <a href="" class="city__link">Дублін</a>
+            <a href="" class="city__link">Мейнут</a>
+          </div>
+        </section>
+        <section class="country-section hide-992">
+          <h3 class="country-section__country-title">США</h3>
+          <picture class="country-section__country-img">
+            <img src="./assets/images/usa.svg" alt="" />
+          </picture>
+          <div class="country-section__cityes">
+            <a href="" class="city__link">Нью-Йорк</a>
+            <a href="" class="city__link">Лос-Анджелес</a>
+            <a href="" class="city__link">Маямі</a>
+            <a href="" class="city__link">Вашингтон</a>
+            <a href="" class="city__link">Сан-Дієго</a>
+            <a href="" class="city__link">Сан-Франциско</a>
+            <a href="" class="city__link">Чікаго</a>
+            <a href="" class="city__link">Лас-Вегас</a>
+            <a href="" class="city__link">Гонолулу</a>
+          </div>
+        </section>
+        <section class="country-section hide-992">
+          <h3 class="country-section__country-title">Країни Європи</h3>
+          <picture class="country-section__country-img">
+            <img src="./assets/images/europe.svg" alt="" />
+          </picture>
+          <div class="country-section__cityes">
+            <a href="" class="city__link"
+              >Ніцца <span class="lowfz">(Франція)</span></a
+            >
+            <a href="" class="city__link"
+              >Мюнхен <span class="lowfz">(Німеччина)</span></a
+            >
+            <a href="" class="city__link"
+              >Монтре та Енгельберг <span class="lowfz">(Швейцарія)</span></a
+            >
+            <a href="" class="city__link"
+              >Айя-Напа <span class="lowfz">(Кіпр)</span></a
+            >
+            <a href="" class="city__link"
+              >Барселона та Лас-Пальмас-де-Гран-Канарія
+              <span class="lowfz">(Іспанія)</span></a
+            >
+          </div>
+        </section>
+        <section class="country-section hide-992">
+          <h3 class="country-section__country-title">ОАЕ</h3>
+          <picture class="country-section__country-img">
+            <img src="./assets/images/oae.svg" alt="" />
+          </picture>
+          <div class="country-section__cityes">
+            <a href="" class="city__link">Дубай</a>
+          </div>
+        </section>
+        <section class="country-section hide-992">
+          <h3 class="country-section__country-title">Мексика</h3>
+          <picture class="country-section__country-img">
+            <img src="./assets/images/mexico.svg" alt="" />
+          </picture>
+          <div class="country-section__cityes">
+            <a href="" class="city__link">Канкун</a>
+          </div>
+        </section>
+      </section>
+      <section class="study-info">
+        <h1 class="study-info__title">
+          Кожна групова поїздка зі <span>STUDY.UA</span> — це мікс з:
+        </h1>
+        <div class="study-info__info">
+          <p class="study-info__info-text">
+            <span>вивчення англійської мови </span> у найкрутіших мовних школах
+            світу,
+          </p>
+          <p class="study-info__info-text">
+            <span>екскурсій </span>найдивовижнішими куточками світу
+          </p>
+          <p class="study-info__info-text">
+            <span>англійської 24/7 — </span>постійної мовної практики,
+          </p>
+          <p class="study-info__info-text">
+            <span>нових знайомств, </span>сотень вражень та веселих розваг!
+          </p>
+        </div>
+        <button class="study-info__btn">Придбати сертифікат</button>
+      </section>
+      <section class="price-block">
+        <picture>
+          <img
+            class="price-block__img"
+            src="/assets/images/giftimg.svg"
+            alt=""
+          />
+        </picture>
+        <div class="price-block-wrapper">
+          <h2 class="price-block__tittle">Лише уявіть</h2>
+          <p class="price-block__subtittle">
+            Ваша дитина отримує персоналізований подарунок, який має ексклюзивне
+            оформлення та дизайн, бачить своє ім’я та повідомлення, яку було
+            написано саме для неї.
+            <span class="bold"> Але найцікавіше — попереду!</span> На неї чекає
+            незабутня освітня подорож, поїздка за кордон — веселі та корисні
+            канікули.
+          </p>
+          <div class="price__action">
+            <h2 class="price__action_price">-€300</h2>
+            <p class="price__action_subtittle">
+              Тільки до 25 грудня — обирайте поїздку зі знижкою €300!
+            </p>
+            <a class="price__action_btn">Зробити подарунок</a>
+          </div>
+        </div>
+      </section>
+      <section class="howitworks">
+        <h2 class="howitworks-title">Як це працює?</h2>
+        <p class="howitworks-sub_title">
+          Для ідеального подарунка вам знадобиться лише 4 простих кроки!
+        </p>
+        <div class="step-div">
+          <picture>
+            <img src="./assets/images/step1.svg" alt="" />
+          </picture>
+          <div class="step-div__text">
+            <h3 class="step-div__title">Крок 1</h3>
+            <p class="step-div__subtitle">Залишіть заявку на цій сторінці.</p>
+          </div>
+        </div>
+        <div class="step-div">
+          <picture>
+            <img src="./assets/images/step2.svg" alt="" />
+          </picture>
+          <div class="step-div__text">
+            <h3 class="step-div__title">Крок 2</h3>
+            <p class="step-div__subtitle">
+              Дочекайтеся дзвінка нашого менеджера. Разом з ним ви обговорите
+              деталі оформлення сертифікату. Ви зможете замовити власний
+              ексклюзивний дизайн або обрати з запропонованих варіантів. Ви
+              матимете можливість написати своє побажання власноруч, або ми
+              можемо самі надрукувати його чи будь-яке інше з нашої
+              топ-підбірки.
+            </p>
+          </div>
+        </div>
+        <div class="step-div">
+          <picture>
+            <img src="./assets/images/step3.svg" alt="" />
+          </picture>
+          <div class="step-div__text">
+            <h3 class="step-div__title">Крок 3</h3>
+            <p class="step-div__subtitle">
+              Наші чарівники працюють над виконанням вашого персонального
+              замовлення.
+            </p>
+          </div>
+        </div>
+        <div class="step-div">
+          <picture>
+            <img src="./assets/images/step4.svg" alt="" />
+          </picture>
+          <div class="step-div__text">
+            <h3 class="step-div__title">Крок 4</h3>
+            <p class="step-div__subtitle">
+              Готово! Ви отримуєте гарний святковий подарунок, який ми дбайливо
+              запаковуємо для вашої дитини. Вам залишається лише тихенько
+              покласти його під ялинку :)
+            </p>
+          </div>
+        </div>
+        <button class="step-div__button">Хочу сертифікат</button>
+      </section>
+      <section class="certificate-section" id="certificate">
+        <div class="certificate-section__wraper">
+          <div class="certificate-section__text">
+            <picture>
+              <img
+                src="./assets/images/sertificate.svg"
+                alt=""
+                class="certificate-section__img"
+              />
+            </picture>
+            <div class="certificate-section__text-text">
+              <h3 class="certificate-section-title">
+                Сертифікат на групову поїздку за кордон для вашої дитини
+              </h3>
+              <p class="certificate-section__subtitle">
+                чудовий спосіб висловити турботу, обрати корисний подарунок,
+                який залишить враження на все життя!
+              </p>
+            </div>
+          </div>
+          <form action="" class="certificate-section__form">
+            <input type="text" placeholder="Ваше Ім’я" required />
+            <input type="tel" placeholder="Номер телефону" required />
+            <input type="email" placeholder="E-Mail" required />
+            <button class="certificate-section__btn"><a href="./assets/pages/thankpage.html">Хочу сертифікат</a> </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-content__text">
+          <h2 class="footer-title">STUDY.UA.</h2>
+          <p class="footer-subtitle">
+            Київ, вул. Драгомирова, 16 метро «Дружби Народів»
+          </p>
+        </div>
+        <div class="footer-numbers">
+          <p class="footer-number">+38 044 500-03-20</p>
+          <p class="footer-number">+38 093 000-03-20</p>
+          <p class="footer-number">+38 097 000-03-20</p>
+        </div>
+      </div>
+      <p class="copirate-text">Всі права захищені. 1999—2021(c)</p>
+    </footer>
+  </body>
 </html>

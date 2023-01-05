@@ -1,0 +1,154 @@
+
+.header{
+    position: relative;
+    max-width: 1920px;
+    height: 100vh;
+
+    text-align: center;
+
+    background:url(/assets/images/secondpagebg.svg);
+    background-size: cover;
+    background-position: right;
+    background-color: #670508;
+
+}
+.logo-link{
+    display: block;
+    position: relative;
+}
+.logo-link::after{
+    content:'';
+
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    
+    background:url(/assets/icons/logo.svg);
+}
+.header-wraper{ 
+    padding: 5% 10%; 
+    padding-top: 100px;
+
+    color: #ffffff;
+}
+.header__text-wraper{
+    max-width: 500px;
+    min-width: 320px;
+
+    text-align: left;
+
+}
+.header-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.header-subtitle{
+    margin-top: 5%;
+
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+.header-button{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    margin-top: 40vh;
+    border-radius: 70px;
+
+    font-size: 1rem;
+    font-weight: 900;
+    color:var(--red-color);
+    
+    box-shadow: 0 5px 30px 0.5px #222222;
+}
+.header-button>a{
+    padding-left: 10%;
+}
+.header-button::before{
+    content: url(../icons/redarrow.svg);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+@media (min-width:600px){
+    .logo-link::after{
+        top: 25px;
+        left: 5%;
+    }
+    .header{
+        text-align: left;
+    }
+    .header-wraper{
+        padding: 20% 15%; 
+    }
+    .header__text-wraper{
+        max-width: 700px;
+        width: 20%;
+        min-width: 500px;
+    }
+    .header-button{
+        margin-top:4.2rem;
+    }
+    .header-title{
+        font-size: 1.6rem;
+    }
+}
+@media (min-width:920px){
+    .header-button{
+        width: 600px;
+        height: 70px;
+        font-size: 1.1rem;
+        font-weight: 900;
+        color:var(--red-color);
+        
+        box-shadow: 0 5px 30px 0.5px #222222;
+    }
+}
+
+@media (min-width:1200px){
+    .logo-link::after{
+        content:'';
+    
+        width: 98px;
+        height: 98px;
+    
+        position: absolute;
+        top: 25px;
+        left: 2%;
+        
+        background:url(/assets/icons/logo.svg);
+        background-repeat: no-repeat;
+        background-size: 98px;
+    }
+    .header-wraper{
+        padding: 12% 18%; 
+        color: #ffffff;
+    }
+    .header__text-wraper{
+        min-width: 800px;
+    }
+    .header-button{
+        
+        margin-top: 3.2rem;
+        border-radius: 70px;
+    
+    
+        font-size: 1.1rem;
+        font-weight: 900;
+        color:var(--red-color);
+    }
+    .header-title{
+        font-size: 2.25rem;
+        font-weight: 900;
+    }
+
+}
